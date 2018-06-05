@@ -130,14 +130,12 @@ describe('fav.arith.multiply', function() {
   });
 
   describe('Multiply large numbers', function() {
-    /*
     it('Should return an inaccurate number', function() {
-      var a1 = new ArithNumber(Math.pow(2, 53) - 1);
+      var a1 = ArithNumber.of(Math.pow(2, 53) - 1);
       var a2 = ArithNumber.of(1.1);
       var a3 = multiply(a1, a2);
       expect(a3.isAccurate()).to.equal(false);
     });
-    */
 
     it('Should return an accurate product of two numbers when reducable (1)',
     function() {
