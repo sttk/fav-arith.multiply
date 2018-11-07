@@ -58,9 +58,9 @@ function movePlace(a) {
 
 ArithNumber.prototype.multiply = function(num) {
   if (num instanceof ArithNumber) {
-    return multiply(this, num);
+    return multiplyConsideringLargeNumbers(this, num);
   } else {
-    return multiply(this, ArithNumber.of(num));
+    return multiplyConsideringLargeNumbers(this, ArithNumber.of(num));
   }
 };
 
